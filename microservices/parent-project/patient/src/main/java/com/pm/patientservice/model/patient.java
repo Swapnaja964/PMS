@@ -1,5 +1,4 @@
 package com.pm.patientservice.model;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +10,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
-public class patient {
+public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID Id;
@@ -28,9 +27,11 @@ public class patient {
     private String address;
 
     @NotNull
+    @Column(name = "DATE_OF_BIRTH") 
     private LocalDate dateOfBirth;
 
     @NotNull
+    @Column(name = "REGISTERED_DATE") 
     private LocalDate registeredDate;  
     
     public UUID getId() {

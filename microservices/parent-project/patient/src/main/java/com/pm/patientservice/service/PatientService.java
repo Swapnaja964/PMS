@@ -1,7 +1,7 @@
 package com.pm.patientservice.service;
 import com.pm.patientservice.dto.PatientResponseDTO;
 import com.pm.patientservice.mapper.PatientMapper;
-import com.pm.patientservice.model.patient;
+import com.pm.patientservice.model.Patient;
 import com.pm.patientservice.repository.PatientRepository;
 import java.time.LocalDate;
 import java.util.List;
@@ -17,9 +17,14 @@ public class PatientService {
         this.patientRepository = patientRepository;
     }
 
+    public List<Patient> getRawPatients() {
+    return patientRepository.findAll();
+}
+
+
     public List<PatientResponseDTO> getPatients(){
-        List<patient> patients = patientRepository.findAll();
-        return patients.stream().map(PatientMapper :: toDTO).toList();
+        List<Patient> patients = patientRepository.findAll();
+        return patients.stream().map(PatientMapper::toDTO).toList();
     }
 
 
