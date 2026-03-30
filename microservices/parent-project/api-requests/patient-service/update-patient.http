@@ -1,0 +1,13 @@
+### updates an existing patient entity
+
+PUT http://localhost:4000/patients/4c50783e-d8b3-4887-8b28-a269a704dc54
+
+Content-Type: application/json
+
+{
+    "name": "Urvaja Magarde",
+    "email": "urvaja@sap.com",
+    "address": "123 main street",
+    "dateOfBirth": "2010-09-28",
+    "registeredDate": "2026-03-30"
+}
