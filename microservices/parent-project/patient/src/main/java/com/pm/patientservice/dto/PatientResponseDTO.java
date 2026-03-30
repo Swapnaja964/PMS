@@ -7,9 +7,10 @@ public class PatientResponseDTO {
     private String address;
     private String dateOfBirth;
 
-     public String getId() {
+    public String getId() 
+    {
     return id;
-  }
+    }
 
   public void setId(String id) {
     this.id = id;
