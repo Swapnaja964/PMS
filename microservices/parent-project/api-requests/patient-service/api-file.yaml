@@ -1,0 +1,129 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+
+servers:
+  - url: http://localhost:4000
+    description: Generated server url
+
+tags:
+  - name: Patient
+    description: API for managing Patients
+
+paths:
+  /patients/{id}:
+    put:
+      tags:
+        - Patient
+      summary: Update a patient
+      operationId: updatePatient
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PatientRequestDTO"
+      responses:
+        "200":
+          description: OK
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/PatientResponseDTO"
+
+    delete:
+      tags:
+        - Patient
+      summary: Delete a patient
+      operationId: deletePatient
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: OK
+
+  /patients:
+    get:
+      tags:
+        - Patient
+      summary: Get Patients
+      operationId: getPatients
+      responses:
+        "200":
+          description: OK
+          content:
+            "*/*":
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PatientResponseDTO"
+
+    post:
+      tags:
+        - Patient
+      summary: Create a new Patient
+      operationId: createPatient
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PatientRequestDTO"
+      responses:
+        "200":
+          description: OK
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/PatientResponseDTO"
+
+components:
+  schemas:
+    PatientRequestDTO:
+      type: object
+      required:
+        - address
+        - dateOfBirth
+        - email
+        - name
+        - registeredDate
+      properties:
+        name:
+          type: string
+          minLength: 0
+          maxLength: 100
+        email:
+          type: string
+        address:
+          type: string
+        dateOfBirth:
+          type: string
+        registeredDate:
+          type: string
+
+    PatientResponseDTO:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        address:
+          type: string
+        dateOfBirth:
+          type: string
