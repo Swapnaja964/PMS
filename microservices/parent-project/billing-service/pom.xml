@@ -74,7 +74,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
-        
+
                 <!-- PROTO -->
                 <plugin>
                     <groupId>org.xolstice.maven.plugins</groupId>
