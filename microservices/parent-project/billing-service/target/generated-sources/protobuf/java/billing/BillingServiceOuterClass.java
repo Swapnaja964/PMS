@@ -35,7 +35,7 @@ public final class BillingServiceOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025billing_service.proto\"@\n\016BillingReques" +
-      "t\022\021\n\tPatientId\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005em" +
+      "t\022\021\n\tpatientId\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005em" +
       "ail\030\003 \001(\t\"4\n\017BillingResponse\022\021\n\tAccountI" +
       "d\030\001 \001(\t\022\016\n\006status\030\002 \001(\t2K\n\016BillingServic" +
       "e\0229\n\024CreateBillingAccount\022\017.BillingReque" +

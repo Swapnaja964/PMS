@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings("serial")
   private volatile java.lang.Object patientId_ = "";
   /**
-   * <code>string PatientId = 1;</code>
+   * <code>string patientId = 1;</code>
    * @return The patientId.
    */
   @java.lang.Override
@@ -63,7 +63,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string PatientId = 1;</code>
+   * <code>string patientId = 1;</code>
    * @return The bytes for patientId.
    */
   @java.lang.Override
@@ -535,7 +535,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object patientId_ = "";
     /**
-     * <code>string PatientId = 1;</code>
+     * <code>string patientId = 1;</code>
      * @return The patientId.
      */
     public java.lang.String getPatientId() {
@@ -551,7 +551,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string PatientId = 1;</code>
+     * <code>string patientId = 1;</code>
      * @return The bytes for patientId.
      */
     public com.google.protobuf.ByteString
@@ -568,7 +568,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string PatientId = 1;</code>
+     * <code>string patientId = 1;</code>
      * @param value The patientId to set.
      * @return This builder for chaining.
      */
@@ -581,7 +581,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string PatientId = 1;</code>
+     * <code>string patientId = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearPatientId() {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string PatientId = 1;</code>
+     * <code>string patientId = 1;</code>
      * @param value The bytes for patientId to set.
      * @return This builder for chaining.
      */
