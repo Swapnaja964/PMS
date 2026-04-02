@@ -41,11 +41,11 @@ private static final long serialVersionUID = 0L;
             billing.BillingResponse.class, billing.BillingResponse.Builder.class);
   }
 
-  public static final int ACCOUNT_ID_FIELD_NUMBER = 1;
+  public static final int ACCOUNTID_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
   private volatile java.lang.Object accountId_ = "";
   /**
-   * <code>string account_id = 1;</code>
+   * <code>string AccountId = 1;</code>
    * @return The accountId.
    */
   @java.lang.Override
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string account_id = 1;</code>
+   * <code>string AccountId = 1;</code>
    * @return The bytes for accountId.
    */
   @java.lang.Override
@@ -184,7 +184,7 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ACCOUNT_ID_FIELD_NUMBER;
+    hash = (37 * hash) + ACCOUNTID_FIELD_NUMBER;
     hash = (53 * hash) + getAccountId().hashCode();
     hash = (37 * hash) + STATUS_FIELD_NUMBER;
     hash = (53 * hash) + getStatus().hashCode();
@@ -471,7 +471,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object accountId_ = "";
     /**
-     * <code>string account_id = 1;</code>
+     * <code>string AccountId = 1;</code>
      * @return The accountId.
      */
     public java.lang.String getAccountId() {
@@ -487,7 +487,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string account_id = 1;</code>
+     * <code>string AccountId = 1;</code>
      * @return The bytes for accountId.
      */
     public com.google.protobuf.ByteString
@@ -504,7 +504,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string account_id = 1;</code>
+     * <code>string AccountId = 1;</code>
      * @param value The accountId to set.
      * @return This builder for chaining.
      */
@@ -517,7 +517,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string account_id = 1;</code>
+     * <code>string AccountId = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearAccountId() {
@@ -527,7 +527,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string account_id = 1;</code>
+     * <code>string AccountId = 1;</code>
      * @param value The bytes for accountId to set.
      * @return This builder for chaining.
      */

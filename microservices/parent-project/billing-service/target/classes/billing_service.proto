@@ -10,13 +10,13 @@ service BillingService
 
 message BillingRequest
 {
-    string patient_id = 1;
+    string PatientId = 1;
     string name = 2;
     string email = 3;
 }
 
 message BillingResponse
 {
-    string account_id = 1;
+    string AccountId = 1;
     string status = 2;
 }

@@ -34,13 +34,13 @@ public final class BillingServiceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025billing_service.proto\"A\n\016BillingReques" +
-      "t\022\022\n\npatient_id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005e" +
-      "mail\030\003 \001(\t\"5\n\017BillingResponse\022\022\n\naccount" +
-      "_id\030\001 \001(\t\022\016\n\006status\030\002 \001(\t2K\n\016BillingServ" +
-      "ice\0229\n\024CreateBillingAccount\022\017.BillingReq" +
-      "uest\032\020.BillingResponseB\013\n\007billingP\001b\006pro" +
-      "to3"
+      "\n\025billing_service.proto\"@\n\016BillingReques" +
+      "t\022\021\n\tPatientId\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005em" +
+      "ail\030\003 \001(\t\"4\n\017BillingResponse\022\021\n\tAccountI" +
+      "d\030\001 \001(\t\022\016\n\006status\030\002 \001(\t2K\n\016BillingServic" +
+      "e\0229\n\024CreateBillingAccount\022\017.BillingReque" +
+      "st\032\020.BillingResponseB\013\n\007billingP\001b\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
