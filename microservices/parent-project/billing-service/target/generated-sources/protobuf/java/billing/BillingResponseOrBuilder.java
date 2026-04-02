@@ -9,12 +9,12 @@ public interface BillingResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string account_id = 1;</code>
+   * <code>string AccountId = 1;</code>
    * @return The accountId.
    */
   java.lang.String getAccountId();
   /**
-   * <code>string account_id = 1;</code>
+   * <code>string AccountId = 1;</code>
    * @return The bytes for accountId.
    */
   com.google.protobuf.ByteString
