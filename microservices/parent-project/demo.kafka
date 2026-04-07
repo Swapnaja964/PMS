@@ -1,0 +1,3 @@
+CONSUMER patient-events1
+topic: patient
+from: latest
