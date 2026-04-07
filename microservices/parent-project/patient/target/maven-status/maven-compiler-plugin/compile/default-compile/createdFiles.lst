@@ -1,4 +1,6 @@
 billing\BillingServiceOuterClass.class
+billing\BillingServiceGrpc$3.class
+billing\BillingServiceGrpc$BillingServiceImplBase.class
 patient\events\PatientEventOrBuilder.class
 billing\BillingResponse$1.class
 patient\events\PatientEvent$Builder.class
