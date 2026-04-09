@@ -1,10 +1,11 @@
 package com.pm.authservice.service;
 import java.util.Optional;
-
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.pm.authservice.dto.LoginRequestDTO;
 import com.pm.authservice.util.jwtUtil;
+
+import io.jsonwebtoken.JwtException;
 @Service
 public class AuthService 
 {
@@ -28,6 +29,16 @@ public class AuthService
         .map(u -> jwtUtil.generateToken(u.getEmail(), u.getRole()));   
 
         return token;
+    }
+
+    public boolean validateToken(String token)
+    {
+        try {
+            jwtUtil.validateToken(token);
+            return true;
+        } catch (JwtException e) {
+            return false;
+        }
     }
 
 }
